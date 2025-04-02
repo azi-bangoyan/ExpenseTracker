@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f0f8;
+    color: #333;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #2c1b2f;
+    color: #ffffff;
+}
+
+.darkmode #theme-toggle svg:first-child{
+    display: none;
+}
+.darkmode #theme-toggle svg:last-child{
+    display: block;
+}
+nav {
+    background-color: #e91e63;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    gap: 10px;
+
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0;
+
+}
+
+button {
+    padding: 20px 20px;
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#expense-form input,
+#expense-form select,
+#expense-form button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+    z-index: 10;
+}
+
+#expense-form input:focus,
+#expense-form select:focus {
+    border-color: #e91e63;
+    outline:none ;
+    z-index: 10;
+    
+}
+
+
+#expense-form button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#expense-form button:hover {
+    background-color: #d81b60;
+}
+
+#expenses-list {
+    margin-top: 20px;
+}
+
+.expense-item {
+    background-color: #fce4ec;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expense-item span {
+    font-size: 1rem;
+    color: #711334;
+}
+
+.delete-btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px;
+}
+
+.delete-btn:hover {
+    background-color: #f2edef;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#expense-chart {
+    margin-top: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+#expense-date {
+    font-size: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+ }
+
+/* Darkmode */
+#theme-toggle svg:last-child{
+    display: none;
+}
+body.dark-mode nav {
+    background-color: #d81b60;
+}
+
+body.dark-mode .expense-item {
+    background-color: #fffdfe;
+    color: #fff;
+}
+
+body.dark-mode .delete-btn {
+    background-color: #d81b60;
+}
+
+body.dark-mode .delete-btn:hover {
+    background-color: #e91e63;
+}
+
+body.dark-mode h2 {
+    color: #fff;
+}
+
+body.dark-mode h2 span {
+    color: #e91e63 ;
+}
+
+body.dark-mode h2 {
+    color: #432947 !important;
+}
+
+body.dark-mode h2 span {
+    color: #432947; 
+}
+#theme-toggle {
+    background-color: rgb(232, 167, 191);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
